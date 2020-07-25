@@ -1,0 +1,370 @@
++ apt-get update
+Get:1 http://security.debian.org/debian-security stretch/updates InRelease [53.0 kB]
+Ign:2 http://deb.debian.org/debian stretch InRelease
+Get:3 http://deb.debian.org/debian stretch-updates InRelease [93.6 kB]
+Get:4 http://deb.debian.org/debian stretch Release [118 kB]
+Get:5 http://deb.debian.org/debian stretch Release.gpg [2410 B]
+Get:6 http://security.debian.org/debian-security stretch/updates/main amd64 Packages [537 kB]
+Get:7 https://download.docker.com/linux/debian stretch InRelease [44.8 kB]
+Get:8 http://deb.debian.org/debian stretch-updates/main amd64 Packages.diff/Index [14.5 kB]
+Get:9 http://deb.debian.org/debian stretch-updates/main amd64 Packages [2596 B]
+Get:10 http://deb.debian.org/debian stretch/main amd64 Packages [7080 kB]
+Get:11 https://download.docker.com/linux/debian stretch/stable amd64 Packages [14.4 kB]
+Fetched 7959 kB in 2s (3675 kB/s)
+Reading package lists...
++ apt-get install -y curl
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3
+The following packages will be upgraded:
+  curl libcurl3
+2 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+Need to get 519 kB of archives.
+After this operation, 4096 B of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 curl amd64 7.52.1-5+deb9u10 [227 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 libcurl3 amd64 7.52.1-5+deb9u10 [292 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 519 kB in 0s (2995 kB/s)
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 20924 files and directories currently installed.)
+Preparing to unpack .../curl_7.52.1-5+deb9u10_amd64.deb ...
+Unpacking curl (7.52.1-5+deb9u10) over (7.52.1-5+deb9u8) ...
+Preparing to unpack .../libcurl3_7.52.1-5+deb9u10_amd64.deb ...
+Unpacking libcurl3:amd64 (7.52.1-5+deb9u10) over (7.52.1-5+deb9u8) ...
+Setting up libcurl3:amd64 (7.52.1-5+deb9u10) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up curl (7.52.1-5+deb9u10) ...
++ curl -O https://nodejs.org/dist/v12.18.0/node-v12.18.0-linux-x64.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 14.0M  100 14.0M    0     0  27.2M      0 --:--:-- --:--:-- --:--:-- 27.2M
++ tar xf node-v12.18.0-linux-x64.tar.xz
++ pwd
++ export PATH=/go/bin:/usr/local/go/bin:/google-cloud-sdk/bin:/workspace:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/workspace/go/src/github.com/tektoncd/dashboard/node-v12.18.0-linux-x64/bin
++ mkdir /tekton/home/.npm-global
++ npm config set prefix ~/.npm-global
++ export PATH=/go/bin:/usr/local/go/bin:/google-cloud-sdk/bin:/workspace:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/workspace/go/src/github.com/tektoncd/dashboard/node-v12.18.0-linux-x64/bin:/tekton/home/.npm-global/bin
++ npm ci
+
+> core-js@3.6.5 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> fsevents@1.2.13 install /workspace/go/src/github.com/tektoncd/dashboard/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> fibers@5.0.0 install /workspace/go/src/github.com/tektoncd/dashboard/node_modules/fibers
+> node build.js || nodejs build.js
+
+`linux-x64-72-glibc` exists; testing
+Binary is fine; exiting
+
+> core-js@2.6.11 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.11 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/babel-polyfill/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.11 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/fetch-mock/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> fetch-mock@7.7.3 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/fetch-mock
+> node scripts/support-fetch-mock.js
+
+[32mHave some â¤ï¸ for fetch-mock? Why not donate to my charity of choice:[22m[39m
+ > [96m[1mhttps://www.justgiving.com/refugee-support-europe
+[0m
+
+> core-js-pure@3.6.5 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> ejs@2.7.4 postinstall /workspace/go/src/github.com/tektoncd/dashboard/node_modules/ejs
+> node ./postinstall.js
+
+Thank you for installing [35mEJS[0m: built with the [32mJake[0m JavaScript build tool ([32mhttps://jakejs.com/[0m)
+
+npm WARN lifecycle @tektoncd/dashboard@0.1.0~postinstall: cannot run in wd @tektoncd/dashboard@0.1.0 npm run bootstrap (wd=/workspace/go/src/github.com/tektoncd/dashboard)
+npm WARN lifecycle @tektoncd/dashboard@0.1.0~prepare: cannot run in wd @tektoncd/dashboard@0.1.0 lerna run prepare (wd=/workspace/go/src/github.com/tektoncd/dashboard)
+added 2535 packages in 50.598s
++ npm run bootstrap:ci
+
+> @tektoncd/dashboard@0.1.0 bootstrap:ci /workspace/go/src/github.com/tektoncd/dashboard
+> lerna bootstrap --no-ci && lerna run prepare
+
+lerna notice cli v3.22.1
+lerna info bootstrap root only
+npm WARN lifecycle @tektoncd/dashboard@0.1.0~postinstall: cannot run in wd @tektoncd/dashboard@0.1.0 npm run bootstrap (wd=/workspace/go/src/github.com/tektoncd/dashboard)
+npm WARN lifecycle @tektoncd/dashboard@0.1.0~prepare: cannot run in wd @tektoncd/dashboard@0.1.0 lerna run prepare (wd=/workspace/go/src/github.com/tektoncd/dashboard)
+npm WARN eslint-config-airbnb@18.2.0 requires a peer of eslint-plugin-react-hooks@^4 || ^3 || ^2.3.0 || ^1.7.0 but none is installed. You must install peer dependencies yourself.
+
+audited 2547 packages in 14.835s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+lerna notice cli v3.22.1
+lerna info Executing command in 2 packages: "npm run prepare"
+lerna info run Ran npm script 'prepare' in '@tektoncd/dashboard-utils' in 2.4s:
+
+> @tektoncd/dashboard-utils@0.1.0 prepare /workspace/go/src/github.com/tektoncd/dashboard/packages/utils
+> npm run build
+
+
+> @tektoncd/dashboard-utils@0.1.0 build /workspace/go/src/github.com/tektoncd/dashboard/packages/utils
+> rimraf dist && NODE_ENV=production babel src --out-dir dist --root-mode upward --ignore "src/**/*.test.js,src/**/*.stories.js"
+
+Successfully compiled 4 files with Babel (994ms).
+lerna info run Ran npm script 'prepare' in '@tektoncd/dashboard-components' in 5.2s:
+
+> @tektoncd/dashboard-components@0.1.0 prepare /workspace/go/src/github.com/tektoncd/dashboard/packages/components
+> npm run build
+
+
+> @tektoncd/dashboard-components@0.1.0 build /workspace/go/src/github.com/tektoncd/dashboard/packages/components
+> rimraf dist && NODE_ENV=production babel src --out-dir dist --copy-files --root-mode upward --ignore "src/**/*.test.js,src/**/*.stories.js"
+
+Successfully compiled 85 files with Babel (2691ms).
+lerna success run Ran npm script 'prepare' in 2 packages in 7.7s:
+lerna success - @tektoncd/dashboard-components
+lerna success - @tektoncd/dashboard-utils
++ npm run build_ko
+
+> @tektoncd/dashboard@0.1.0 build_ko /workspace/go/src/github.com/tektoncd/dashboard
+> webpack --config webpack.prod.js --output-path='./cmd/dashboard/kodata' 
+
+Hash: e90a395fa12e1b1ec3b6
+Version: webpack 4.43.0
+Time: 89502ms
+Built at: 07/25/2020 3:04:16 AM
+                               Asset       Size  Chunks                                Chunk Names
+0d221d0117264286d3571e0df443bafc.svg   10.2 KiB          [emitted]                     
+9a45899530a3f331f44114fb368b87e5.svg   19.6 KiB          [emitted]                     
+                         favicon.png     29 KiB          [emitted]                     
+                          index.html  816 bytes          [emitted]                     
+       main.52ee975623eb12b04ef3.css    303 KiB       0  [emitted] [immutable]  [big]  main
+        main.67d855cf905735980daf.js    719 KiB       0  [emitted] [immutable]  [big]  main
+     runtime.4763792beb9808ad78f0.js   1.46 KiB       1  [emitted] [immutable]         runtime
+     vendors.2e2e6f0a3281d0c91af5.js    1.7 MiB       2  [emitted] [immutable]  [big]  vendors
+Entrypoint main [big] = runtime.4763792beb9808ad78f0.js vendors.2e2e6f0a3281d0c91af5.js main.52ee975623eb12b04ef3.css main.67d855cf905735980daf.js
+[0] multi ./src/index.js 28 bytes {0} [built]
+[/MKj] ./node_modules/react-redux/es/index.js + 22 modules 49.6 KiB {2} [built]
+    |    23 modules
+[/YMQ] ./src/actions/locale.js 1.41 KiB {0} [built]
+[22Ww] ./src/api/triggerBindings.js 2.3 KiB {0} [built]
+[37md] ./src/utils/polyfills.js 8.88 KiB {0} [built]
+[3UD+] (webpack)/buildin/harmony-module.js 573 bytes {2} [built]
+[6n87] ./src/api/tasks.js 2.08 KiB {0} [built]
+[9i3r] ./src/api/utils.js 5.37 KiB {0} [built]
+[A2yC] ./src/api/taskRuns.js 5.93 KiB {0} [built]
+[BLw3] ./src/api/pipelineResources.js 3.25 KiB {0} [built]
+[DRcq] ./src/api/pipelineRuns.js 6.07 KiB {0} [built]
+[Nlzp] ./src/api/index.js 8.35 KiB {0} [built]
+[Q2AE] ./src/store/index.js 2.58 KiB {0} [built]
+[TucV] ./src/containers/App/index.js 732 bytes {0} [built]
+[tjUo] ./src/index.js 2.29 KiB {0} [built]
+    + 5478 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  main.52ee975623eb12b04ef3.css (303 KiB)
+  main.67d855cf905735980daf.js (719 KiB)
+  vendors.2e2e6f0a3281d0c91af5.js (1.7 MiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (2.7 MiB)
+      runtime.4763792beb9808ad78f0.js
+      vendors.2e2e6f0a3281d0c91af5.js
+      main.52ee975623eb12b04ef3.css
+      main.67d855cf905735980daf.js
+
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+Child html-webpack-plugin for "index.html":
+     1 asset
+    Entrypoint undefined = index.html
+    [YuTi] (webpack)/buildin/module.js 497 bytes {0} [built]
+    [b4wS] ./node_modules/html-webpack-plugin/lib/loader.js!./src/index.template.html 520 bytes {0} [built]
+    [yLpj] (webpack)/buildin/global.js 472 bytes {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/DataTableSkeleton/DataTableSkeleton.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/DetailsHeader/DetailsHeader.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Graph/Graph.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Header/Header.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/KeyValueList/KeyValueList.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/LabelFilter/LabelFilter.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/LoadingShell/LoadingShell.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Log/Log.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/LogoutButton/LogoutButton.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Param/Param.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/PipelineRuns/PipelineRuns.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Rerun/Rerun.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/RunHeader/RunHeader.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Spinner/Spinner.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Step/Step.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/StepDefinition/StepDefinition.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/StepDetails/StepDetails.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/StepStatus/StepStatus.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Table/Table.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Task/Task.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/TaskRunDetails/TaskRunDetails.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/TaskTree/TaskTree.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/components/Trigger/Trigger.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!packages/components/dist/scss/Run.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/components/App/App.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/components/CreateSecret/CreateSecret.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/components/Definitions/Definitions.scss:
+    Entrypoint mini-css-extract-plugin = *
+       2 modules
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/containers/About/About.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [cU76] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/containers/About/About.scss 49.6 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/containers/EventListener/EventListener.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [m1U0] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/containers/EventListener/EventListener.scss 50.8 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/containers/ImportResources/ImportResources.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [Cw0L] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/containers/ImportResources/ImportResources.scss 52 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/containers/SideNav/SideNav.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [Dl79] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/containers/SideNav/SideNav.scss 1.97 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/scss/Create.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [YvsQ] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/scss/Create.scss 53.9 KiB {0} [built]
+        + 1 hidden module
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js??ref--8-1!node_modules/sass-loader/dist/cjs.js??ref--8-2!src/scss/Triggers.scss:
+    Entrypoint mini-css-extract-plugin = *
+    [KQJR] ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/sass-loader/dist/cjs.js??ref--8-2!./src/scss/Triggers.scss 49.9 KiB {0} [built]
+        + 1 hidden module
